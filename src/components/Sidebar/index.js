@@ -1,7 +1,7 @@
 import './index.scss'
 import {Link , NewLink} from 'react-router-dom'
-import LogoS from '../../assets/images/logo-s.png'
-import LogoSubtitle from '../../assets/images/logo_sub.png'
+import LogoS from '../../assets/images/Man-with-computer.png'
+import man_png from '../../assets/images/man.png'
 import Logo_resume from '../../assets/images/Resume_png.png'
 import { useState } from 'react'
 
@@ -14,14 +14,11 @@ const Sidebar = () =>{
 
     <div className="nav-bar">
         <center>
-        <Link className="logo" to="/" onClick={() => setShowNav(false)}>
-            <img src={LogoS} alt="Logo" />
-            <img className="sub-logo" src={LogoSubtitle} alt="slobodan" />
-        </Link>
 
         <Link className="options" to="/">
+            <Link className="option" to="/"><img src={LogoS} alt="Logo" />Home Page</Link>
             <Link className="option" to="/Resume" ><img src={Logo_resume} /> Resume</Link>
-            <Link className="option" to="/About">About me</Link>
+            <Link className="option" to="/About"><img src={man_png} /> About me</Link>
             <Link className="option" to="/Handles" >Handles</Link>
         </Link>
         </center>
