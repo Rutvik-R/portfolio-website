@@ -1,13 +1,11 @@
 .nav-bar{
-    background-color: #181818;
     width:60px;
-    height:  100%;
     position: absolute;
     top: 0;
     z-index: 3;
-    min-height: 500px;
     display: block;
-
+    margin-bottom: 0px;
+    padding: 0px;
     .logo{
         display: block;
         padding: 8px 0;
@@ -33,5 +31,31 @@
         background-color: #ffffff;
         border-radius: 3px ;
     }
+
+}
+
+.max_navbar_height{
+    background-color: #181818;
+    height: 100vh;
+    animation-name: sidebar_animation;
+    animation-duration: 4s;
+
+
+    @keyframes sidebar_animation{
+        0% {background-color: aqua; left: -55px;}
+        20% {background-color:rgb(72, 58, 86); left: -45px;}
+        40% {background-color:rgb(100, 83, 60); left: -35px}
+        60% {background-color: brown; left: -25px;}
+        80% {background-color: rgb(65, 104, 105); left: -10px;}
+        100% {background-color: rgb(82, 91, 64) ; left: 0px;}
+    }
+
+}
+
+
+.min_navbar_height{
+    background-color: transparent;
+    height: fit-content;
+
 
 }
