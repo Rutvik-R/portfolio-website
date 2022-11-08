@@ -1,3 +1,96 @@
-.About{
-    margin-left: 60px;
+.About {
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    width: 100%;
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+
+    .my_image {
+
+        width: 300px;
+        height: 350px;
+        margin: inherit;
+
+        img {
+            height: 100%;
+            width: 100%;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+
+    }
+
+    .personal_info {
+        margin: inherit;
+        width: 70%;
+        height: fit-content;
+        padding: inherit;
+
+        .my_name {
+            font-size: 300%;
+            color: #f3f3f3;
+        }
+    }
+
+    .Other_info {
+        margin: inherit;
+        width: 70%;
+        height: fit-content;
+        font-size: 200%;
+        margin: 20px;
+        color: #989090;
+
+        // border: 2px solid black;
+        p {
+            padding: 0px;
+            margin: 0px;
+        }
+
+    }
+
+    .About_profiles {
+        // border:2px solid black;
+        width: 70%;
+        height: fit-content;
+
+        label {
+            color: #328800;
+            font-size: 210%;
+        }
+
+        a {
+            font-size: 200%;
+            padding: 5px;
+
+        }
+
+        a:hover {
+            color: #f475e7;
+        }
+
+        a:active {
+            color: aqua;
+
+        }
+
+    }
+
+}
+
+.About_profile_mobile {
+    display: inline;
+    @media screen and (max-width: 800px) {
+        display: block;
+    }
+
 }

@@ -1,21 +1,54 @@
 .Resume{
-    margin-left: 65px;
-    min-height: 100vh;
-    height: fit-content ;
-    display: flex;
-    scroll-behavior: smooth;
+    display:flex;
+    width:  90%;
+    margin-left: 5%;
+    height: 100vh;
     overflow-y: scroll;
+    overflow-x: scroll;
+
+    ::-webkit-scrollbar{
+        display: none;
+    }
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+    
+    @media screen and (max-width: 800px){
+        display:block;
+        width: 95%;
+        
+        scroll-behavior: smooth;
+        overflow-y: scroll;
+    }
 }
 
 .resume_text{
     width: 50%;
     height: 100vh;
-    display: hidden;
+
+    
+    @media screen and (max-width: 800px){
+        width: 90%;
+    }
 }
 
 .resume_pdf_show{
     width: 50%;
     height: 100vh;
+
+    @media screen and (max-width : 800px) {
+        width: 90%;
+        height: fit-content;
+        display: block;
+        margin-top: 100px;
+        overflow-x: scroll;
+    }
+
+    Document{
+        width: 90%;
+        height: 100%;
+        right: 0;
+    }
+
 }
 
 .resume_text .resume_part{
@@ -28,7 +61,15 @@
         font-size: 200%;
     }
 }
-.resume_pdf_show{
-    margin-top: 10px;
-    box-shadow: 10px white;
+
+
+center{
+    height: 100%;
+}
+
+.Main{
+    width: 100wh;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
 }
