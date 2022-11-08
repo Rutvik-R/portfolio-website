@@ -2,10 +2,15 @@
     width:60px;
     position: absolute;
     top: 0;
+    bottom: 0;
     z-index: 3;
     display: block;
     margin-bottom: 0px;
     padding: 0px;
+    overflow: hidden;
+
+    
+
     .logo{
         display: block;
         padding: 8px 0;
@@ -32,6 +37,11 @@
         border-radius: 3px ;
     }
 
+
+}
+
+.Navbar_shw_button{
+    margin-top: 10px;
 }
 
 .max_navbar_height{
@@ -40,14 +50,19 @@
     animation-name: sidebar_animation;
     animation-duration: 4s;
 
-
     @keyframes sidebar_animation{
-        0% {background-color: aqua; left: -55px;}
-        20% {background-color:rgb(72, 58, 86); left: -45px;}
-        40% {background-color:rgb(100, 83, 60); left: -35px}
-        60% {background-color: brown; left: -25px;}
-        80% {background-color: rgb(65, 104, 105); left: -10px;}
-        100% {background-color: rgb(82, 91, 64) ; left: 0px;}
+        0% {background-color: aqua; }
+        20% {background-color:rgb(72, 58, 86); }
+        40% {background-color:rgb(100, 83, 60);}
+        60% {background-color: brown; }
+        80% {background-color: rgb(65, 104, 105); }
+        100% {background-color: rgb(82, 91, 64) ; }
+    }
+
+    @media screen and (max-width: 800px){
+        width: 80%;
+        left: 0;
+
     }
 
 }
@@ -56,6 +71,11 @@
 .min_navbar_height{
     background-color: transparent;
     height: fit-content;
+    left: -27px;
 
+    @media screen and (max-width: 800px){
+        // width: 80%;
+        left: -27px;
 
+    }
 }
